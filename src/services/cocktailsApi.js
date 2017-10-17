@@ -35,5 +35,3 @@ const cocktailsApi = {
 }
 
 export default cocktailsApi
-
-http://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita

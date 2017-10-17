@@ -1,0 +1,25 @@
+#root > div > nav {
+	background: linear-gradient(to right, #f7ff00, #db36a4); 
+}
+
+h1 {
+	color:red;
+}
+
+ div > img{
+	margin: 0 auto;
+	border-color: solid, 5px, yellow;
+}
+
+.carousel{
+	width: 400px;
+	margin:0 auto;
+}
+
+#root > div > div > div > div > a.carousel-control.right{
+	background-image: none !important;
+}
+
+#root > div > div > div > div > a.carousel-control.left{
+	background-image: none !important;
+}
