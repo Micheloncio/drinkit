@@ -18,19 +18,14 @@ const Footer= ()=>(
                 {/*Pinterest*/}
                 <a className="icons-sm pin-ic"><i className="fa fa-pinterest fa-lg white-text"> </i></a>
               </div>
+              <div className="container-fluid">
+            © 2017 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+          </div>
             </div>
             {/*/First column*/}
           </div>
           {/*/First row*/}
         </div>
-        {/*/Footer Links*/}
-        {/*Copyright*/}
-        <div className="footer-copyright">
-          <div className="container-fluid">
-            © 2016 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-          </div>
-        </div>
-        {/*/Copyright*/}
       </footer>
 )
 

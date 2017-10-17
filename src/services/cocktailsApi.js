@@ -35,4 +35,3 @@ const cocktailsApi = {
 }
 
 export default cocktailsApi
-
