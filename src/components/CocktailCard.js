@@ -1,5 +1,5 @@
 import React,{Component} from 'react'
-import {Grid, Row, Thumbnail, Col, Image, rounded} from 'react-bootstrap'
+import {Grid, Row, Thumbnail, Col, Image} from 'react-bootstrap'
 
 
 class CocktailCard extends Component{
