@@ -25,14 +25,6 @@ class CocktailCard extends Component{
 					ingredients.push(res[0][ingredient])	
 				}
 			}
-			let measures = []
-			for(let i=1; i<=15;i++){
-				let measure = 'strMeasure' + i
-				if(res[0][measure] && res[0][measure]!== ' '){
-					res[0]['cocktailId']
-					measures.push(res[0][measure])	
-				}
-			}
 
 			let cocktail = {
 				cocktailId: res[0].idDrink,
@@ -43,7 +35,6 @@ class CocktailCard extends Component{
 				cocktailGlass: res[0].strGlass,
 				cocktailInstructions: res[0].strInstructions,
 				cocktailIngredients: ingredients,
-				cocktailMeasures: measures,
 			}
 
 			this.setState({
@@ -58,6 +49,10 @@ class CocktailCard extends Component{
 		this.getCocktail(this.props.cocktailName)
 	}
 
+	componentWillReceiveProps(nextProps) {
+		this.getCocktail(this.props.cocktailName)
+	}
+
 	render(){
 		return(
 				<Grid className="align-content">
@@ -65,10 +60,19 @@ class CocktailCard extends Component{
 				    <Col xs={12} md={4} ms={4}>
 				      <Thumbnail> 
 				       	<Image src={this.state.cocktailState.cocktailImg} rounded responsive /> 
-				        <h3>{this.state.cocktailState.cocktailName}</h3>
-				         <ul>
-                            
-                        </ul>
+				        <h2>{this.state.cocktailState.cocktailName}</h2>
+				        <Row>
+				       		<Col xs={12} md={6}>
+						        <ul>
+						         	<h4>Ingredients:</h4>
+		                            {this.state.cocktailState.cocktailIngredients ? this.state.cocktailState.cocktailIngredients.map((ingredient) => <li>{ingredient}</li>) : undefined}
+		                        </ul>
+		                    </Col>
+							<Col xs={12} md={6}>
+		                        <h3>Instructions:</h3>
+								<p>{this.state.cocktailState.cocktailInstructions}</p>
+							</Col>
+						</Row>
 				      </Thumbnail>
 				    </Col>
 				  	</Row>
@@ -77,6 +81,6 @@ class CocktailCard extends Component{
 		)
 	}
 }
-//{this.state.cocktailState.cocktailIngredients.map((ingredient,i)=><li key={i}>{ingredient}</li>)}
+
 export default CocktailCard
 
