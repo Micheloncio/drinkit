@@ -32,6 +32,14 @@ const cocktailsApi = {
 		return axios.get(this.baseUrl + `filter.php?i=${ingredient}`)
 		.then (res=> res.data.drinks)
 	},
+	getDrinkById: function(id) {
+		return axios.get(this.baseUrl + `lookup.php?i=${id}`)
+		.then (res=> res.data.drinks)
+	},
+	getAllIngredients: function() {
+		return axios.get(this.baseUrl + 'list.php?i=list')
+		.then (res=> res.data.drinks)
+	},
 }
 
 export default cocktailsApi
