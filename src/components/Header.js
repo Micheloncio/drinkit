@@ -8,7 +8,7 @@ import '../img/ilustr3.png'
 
 
 const Header= () => (
-	<Navbar inverse collapseOnSelect fixedTop>
+	<Navbar inverse collapseOnSelect>
     <Navbar.Header>
       	<Navbar.Brand>
         	<a href="/"><strong>DrinkIt</strong></a>
