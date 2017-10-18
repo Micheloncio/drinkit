@@ -22,16 +22,7 @@ class AllDrinks extends Component {
 
 
 
-function ActionLink = () => {
-  function handleClick(e) {
-    e.preventDefault();
-    console.log('The link was clicked.');
-  }
 
-  return (
-    {this.state.cocktailState.map((name,i) => <li key={i}>{name}</li>)}
-  );
-}
 
 
 
