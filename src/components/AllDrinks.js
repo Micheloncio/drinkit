@@ -97,7 +97,7 @@ class AllDrinks extends Component {
 			    <Row>
 			    <Col xs={6} md={4}>
 			      <Thumbnail>
-			      	<Button onClick={this.listAlcDrinks} bsStyle="primary" width={242} height={200}>Button</Button>&nbsp;
+			      	<Button onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCHOL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
 			         <div>
 			         	<SearchInput AlcArray = {this.state.alcoholState} updateState={this.updateState}/>
@@ -108,7 +108,7 @@ class AllDrinks extends Component {
 			    	</Col>
 			    	<Col xs={6} md={4}>
 			      <Thumbnail>
-			        <Button onClick={this.listNonAlcDrinks} bsStyle="primary">Button</Button>&nbsp;
+			        <Button onClick={this.listNonAlcDrinks} bsStyle="primary">NO-ALCHOL</Button>&nbsp;
 					<Collapse in={this.state.toggleState2}>
 			        <div>
 			         	<SearchInput2 NoAlcArray = {this.state.nonAlcocholState} updateStateA={this.updateState2}/>
@@ -119,7 +119,7 @@ class AllDrinks extends Component {
 			    </Col>
 			    <Col xs={6} md={4}>
 			      <Thumbnail>
-			        <Button onClick={this.listOptionalDrinks} bsStyle="primary">Button</Button>&nbsp;
+			        <Button onClick={this.listOptionalDrinks} bsStyle="primary">OPTIONAL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState3}>
 			        <div>
 			         	<SearchInput3 optionalArray = {this.state.optionalState} updateStateB={this.updateState3}/>

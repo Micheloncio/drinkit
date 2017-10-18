@@ -8,16 +8,16 @@ import '../img/ilustr3.png'
 
 
 const Header= () => (
-	<Navbar inverse collapseOnSelect>
+	<Navbar inverse collapseOnSelect fixedTop>
     <Navbar.Header>
       	<Navbar.Brand>
         	<a href="/"><strong>DrinkIt</strong></a>
-      	</Navbar.Brand>
-      <Navbar.Toggle />
-    </Navbar.Header>
+      	 </Navbar.Brand>
+          <Navbar.Toggle />
+      </Navbar.Header>
     <Navbar.Collapse>
       <Nav>
-     	<LinkContainer to='/all_drinks'>
+     	  <LinkContainer to='/all_drinks'>
          	<NavItem eventKey={1}>AllDrinks</NavItem>
         </LinkContainer>
         <LinkContainer to='/choose_ingredients'>
