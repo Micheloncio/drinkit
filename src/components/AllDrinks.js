@@ -7,7 +7,6 @@ class AllDrinks extends Component {
 		this.state={
 			cocktailState: [],
 		}
-
 	}
 
 	componentDidMount = () => { 
@@ -37,9 +36,4 @@ class AllDrinks extends Component {
 		
 	}
 }
-
-
-
-
-
 export default AllDrinks
