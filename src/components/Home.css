@@ -2,14 +2,6 @@
 	background: linear-gradient(to right, #f7ff00, #db36a4); 
 }
 
-h1 {
-	color:red;
-}
-
- div > img{
-	margin: 0 auto;
-	border-color: solid, 5px, yellow;
-}
 
 .carousel{
 	width: 400px;
@@ -22,4 +14,15 @@ h1 {
 
 #root > div > div > div > div > a.carousel-control.left{
 	background-image: none !important;
+}
+
+#root > div > footer > div > div > div {
+
+	align-items: inherit;
+}
+
+
+#root > div > footer > div > div > div > div.container-fluid{
+
+	align-content:  left;
 }

@@ -1,14 +1,14 @@
 import React from 'react'
 
 const Footer= ()=>(
-<footer className="page-footer indigo center-on-small-only pt-0">
+<footer className="page-footer indigo right-on-small-only pt-0">
         {/*Footer Links*/}
         <div className="container">
           {/*First row*/}
           <div className="row">
             {/*First column*/}
             <div className="col-md-12">
-              <div className="footer-socials mb-5 flex-center">
+              <div className="footer-socials mb-5 flex-right">
                 {/*Facebook*/}
                 <a className="icons-sm fb-ic"><i className="fa fa-facebook fa-lg white-text mr-md-4"> </i></a>
                 {/*Twitter*/}
