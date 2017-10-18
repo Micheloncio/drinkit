@@ -1,0 +1,17 @@
+#root > div > div > div > div > div:nth-child(1) > div > div > div > ul {
+
+	list-style: none;
+	text-align: left;
+}
+
+#root > div > div > div > div > div:nth-child(2) > div > div > div > ul {
+
+	list-style: none;
+	text-align: left;
+}
+
+#root > div > div > div > div > div:nth-child(3) > div > div > div > ul {
+
+	list-style: none;
+	text-align: left;
+}
