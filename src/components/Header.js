@@ -15,7 +15,7 @@ const Header= () => (
       	 </Navbar.Brand>
           <Navbar.Toggle />
       </Navbar.Header>
-    <Navbar.Collapse>
+      <Navbar.Collapse>
       <Nav>
      	  <LinkContainer to='/all_drinks'>
          	<NavItem eventKey={1}>AllDrinks</NavItem>
