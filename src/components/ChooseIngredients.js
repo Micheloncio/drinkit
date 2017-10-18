@@ -6,6 +6,7 @@ import './ChooseIngredients.css'
 import { cloneArray } from '../utils'
 import Search from './choose_ing_components/Search'
 import SelectedIngredients from './choose_ing_components/SelectedIngredients'
+import CocktailCard from './CocktailCard'
 
 class ChooseIngredients extends Component {
 
@@ -17,6 +18,8 @@ class ChooseIngredients extends Component {
 			textSearch:'',
 			ingredientsSelected: [],
 			drinksState:[],
+			cocktailState: {},
+			cocktailName: ''
 		}
 	}
 
@@ -141,6 +144,16 @@ class ChooseIngredients extends Component {
             }
         })
 	}
+
+	takeNameCocktail = (e, name) => {
+		e.preventDefault()
+		console.log('el nombre es' + name)
+		this.setState({
+			cocktailName: name,
+		})
+	}
+
+
 	render() {
 		return( 
 			<div className='container'>
@@ -165,8 +178,11 @@ class ChooseIngredients extends Component {
 				</div>
 				<div className='row'>
 					<ul>
-					{this.state.drinksState.map((elem) => <li key={elem.drinkId}>{elem.drinkName}</li>)}
+					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)}key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
 					</ul>
+				</div>
+				<div className='row'>
+					{this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined}
 				</div>
 			</div>
 		)
