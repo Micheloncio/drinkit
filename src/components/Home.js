@@ -13,10 +13,10 @@ class Home extends Component {
 	}
 
 	componentDidMount = () => {
-		const getImage = async () => {
-			const  img1 = await cocktailsApi.getRandomCocktail();
-			const  img2 = await cocktailsApi.getRandomCocktail();
-			const  img3 = await cocktailsApi.getRandomCocktail()
+		const getImage = () => {
+			const  img1 = cocktailsApi.getRandomCocktail();
+			const  img2 = cocktailsApi.getRandomCocktail();
+			const  img3 = cocktailsApi.getRandomCocktail()
 
 			return Promise.all([img1, img2, img3])
 		}

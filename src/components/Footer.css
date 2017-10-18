@@ -1,0 +1,12 @@
+#root > div > footer{
+	background-color: white !important;
+	color: black;
+}
+
+footer.page-footer a{
+	color:black;
+}
+
+.footer-socials{
+	background-color:black;
+}
