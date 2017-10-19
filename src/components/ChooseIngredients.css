@@ -14,15 +14,26 @@ h2 {
 .block{
 	text-align: left !important;
 }
-.bbSelected{
-	border-right: grey;
-}
 
 label{
 	display:block;
 }
 li{
 	list-style-type:none;
+	text-decoration:none;
+}
+li.listC{
+	list-style-type:none;
+	background-color: white;
+	border-color: grey;
+	padding:10px;
+	border-radius:10px;
+}
+h3{
+	background-color: #ff7404;
+	border-radius:10px;
+	padding: 10px;
+	color:black;
 }
 
 span{

@@ -19,6 +19,7 @@ h1{
 }
 h1:hover{
 	transform: rotate(4deg);
+	color:#fd7302;
 }
 li{
 	font-size: 20px;
@@ -30,7 +31,7 @@ li{
 }
 
 .buttonClose{
-	background-color: orange;
+	background-color: #fd7302;
 	color:white;
 }
 .buttonClose:hover{
