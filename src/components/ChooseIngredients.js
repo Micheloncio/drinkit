@@ -153,6 +153,7 @@ class ChooseIngredients extends Component {
 		console.log('el nombre es' + name)
 		this.setState({
 			cocktailName: name,
+			lgShow: true
 		})
 	}
 
@@ -182,12 +183,12 @@ class ChooseIngredients extends Component {
 				</div>
 				<div className='row'>
 					<ul>
-					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)} onClick={()=>this.setState({ lgShow: true })} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
+					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
 					</ul>
 				</div>
 				<div className='row'>
 					{/*this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined*/}
-					<CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} />					
+					{ this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} /> : undefined}
 				</div>
 			</div>
 		)
