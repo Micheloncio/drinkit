@@ -1,0 +1,21 @@
+
+.closeBtn{
+	margin-right: 5px;
+}
+.imageCocktail{
+	width: 50%;
+	height: 50%;
+}
+
+h2{
+	text-align: center;
+}
+
+li{
+	font-size: 20px;
+}
+.instructions{
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 20px;
+}

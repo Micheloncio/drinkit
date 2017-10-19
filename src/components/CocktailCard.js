@@ -55,47 +55,34 @@ class CocktailCard extends Component{
 
 	render(){
 		return(
-				/*<Grid className="align-content">
-				    <Row>
-				    <Col xs={12} md={5} ms={5}>
-				      <Thumbnail> 
-				       	<Image src={this.state.cocktailState.cocktailImg} rounded responsive /> 
-				        <h2>{this.state.cocktailState.cocktailName}</h2>
-				        <Row>
-				       		<Col xs={12} md={6}>
-						        <ul>
-						         	<h3>Ingredients:</h3>
-		                            {this.state.cocktailState.cocktailIngredients ? this.state.cocktailState.cocktailIngredients.map((ingredient) => <li>{ingredient}</li>) : undefined}
-		                        </ul>
-		                    </Col>
-							<Col xs={12} md={6}>
-		                        <h3>Instructions:</h3>
-								<p>{this.state.cocktailState.cocktailInstructions}</p>
-							</Col>
-						</Row>
-				      </Thumbnail>
-				    </Col>
-				  	</Row>
-				</Grid>*/
 				<Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
-        				<Modal.Header closeButton>
-          					<Image src={this.state.cocktailState.cocktailImg} rounded responsive />
-        				</Modal.Header>
-        			<Modal.Body>
-			          <h4>{this.state.cocktailState.cocktailName}</h4>
-			          <Row>
-				       		<Col xs={12} md={6}>
-						        <ul>
-						         	<h3>Ingredients:</h3>
-		                            {this.state.cocktailState.cocktailIngredients ? this.state.cocktailState.cocktailIngredients.map((ingredient) => <li>{ingredient}</li>) : undefined}
-		                        </ul>
-		                    </Col>
-							<Col xs={12} md={6}>
-		                        <h3>Instructions:</h3>
-								<p>{this.state.cocktailState.cocktailInstructions}</p>
-							</Col>
-						</Row>
-			        </Modal.Body>
+					
+
+
+	        				<Modal.Header closeButton className="closeBtn">
+	        					<h2>{this.state.cocktailState.cocktailName}</h2>	          					
+	        				</Modal.Header>
+	        		<Row>
+	        			<Modal.Body>  
+		        			<Row>
+			        			<Col xs={12} md={6}>
+			        				<Image className="imageCocktail"src={this.state.cocktailState.cocktailImg} rounded responsive />
+			        			</Col>
+				          		<Col xs={12} md={6}>	
+							        <ul>
+							         	<h3>Ingredients:</h3>
+			                            {this.state.cocktailState.cocktailIngredients ? this.state.cocktailState.cocktailIngredients.map((ingredient) => <li>{ingredient}</li>) : undefined}
+			                        </ul>
+			                    </Col>	
+			                </Row>						
+							<Row>
+								<div className="instructions">
+			                    	<h3>Instructions:</h3>
+									<p>{this.state.cocktailState.cocktailInstructions}</p>
+								</div>
+							</Row>
+						</Modal.Body>
+					</Row>
 			        <Modal.Footer>
 			          <Button onClick={this.props.onHide}>Close</Button>
 			        </Modal.Footer>
