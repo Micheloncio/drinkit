@@ -184,7 +184,7 @@ class ChooseIngredients extends Component {
 					</ul>
 				</div>
 				<div className='row'>
-
+					{this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined}
 					<Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
         				<Modal.Header closeButton>
           					<Modal.Title id="contained-modal-title-lg">Modal heading</Modal.Title>
