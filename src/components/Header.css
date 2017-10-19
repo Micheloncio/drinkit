@@ -8,3 +8,35 @@
   width:100%;
   background:#FFFFFF ;
 }
+
+#root > div > nav > div > div.navbar-header > div > img {
+
+	height: 50px;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 15px;	
+
+
+}
+
+#root > div > nav > div > div.navbar-header > div > a > strong {
+
+font-size: 30px; 
+font-family: 'Amatic SC', cursive;	
+margin-right: 50px;
+color: black;
+
+
+
+
+}
+
+#root > div > nav > div > div.navbar-header > div {
+
+	margin-bottom: 5px;
+	padding-top: 5px;
+}
+
+.navItem{
+	margin-right: 20px;
+} 

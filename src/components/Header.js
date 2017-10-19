@@ -4,30 +4,31 @@ import {Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap'
 import './Home.css'
 import './Header.css'
-import '../img/ilustr3.png'
+
+
 
 
 const Header= () => (
 	<Navbar inverse collapseOnSelect className='headerfix'>
     <Navbar.Header>
       	<Navbar.Brand>
-        	<a href="/"><strong>DrinkIt</strong></a>
+        <div>
+        <img src='./logo.jpg'/>
+        	<a href="/"><strong>Drink It</strong></a>
+          </div>
       	 </Navbar.Brand>
           <Navbar.Toggle />
       </Navbar.Header>
       <Navbar.Collapse>
       <Nav>
      	  <LinkContainer to='/all_drinks'>
-         	<NavItem eventKey={1}>AllDrinks</NavItem>
+         	<NavItem className="navItem" eventKey={1}>AllDrinks</NavItem>
         </LinkContainer>
         <LinkContainer to='/choose_ingredients'>
-        	<NavItem eventKey={2} href="#">Choose Ingredients</NavItem>
+        	<NavItem className="navItem" eventKey={2} href="#">Choose Ingredients</NavItem>
         </LinkContainer>
 		    <LinkContainer to='/random_drink'>
-       		<NavItem eventKey={2} href="#">Random Drink</NavItem>
-        </LinkContainer>
-        <LinkContainer to='/user'>
-        	<NavItem eventKey={2} href="#">My Favourites</NavItem>
+       		<NavItem className="navItem" eventKey={2} href="#">Random Drink</NavItem>
         </LinkContainer>
       </Nav>
     </Navbar.Collapse>
