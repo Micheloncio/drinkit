@@ -1,5 +1,3 @@
-
-
 h1 {
 	color:red;
 }
@@ -12,6 +10,12 @@ div > img{
 .carousel{
 	width: 400px;
 	margin:0 auto;
+}
+.carousel-control.left{
+	background-image:none;
+}
+.carousel-control.right{
+	background-image:none;
 }
 
 #root > div > div > div > div > a.carousel-control.right{
@@ -33,7 +37,7 @@ div > img{
 	align-content:  left;
 }
 
-html { 
+body { 
   background: url(../img/1280.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;

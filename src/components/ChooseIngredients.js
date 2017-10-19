@@ -1,5 +1,7 @@
 import React, {Component} from 'react'
 import cocktailsApi from '../services/cocktailsApi'
+import Home from './Home'
+import CarouselImg from './CarouselImg'
 
 import './ChooseIngredients.css'
 
@@ -161,47 +163,47 @@ class ChooseIngredients extends Component {
 	render() {
 		let lgClose = () => this.setState({ lgShow: false })
 		return( 
+			<div className="allDrinks">
 			<div className='container'>
 				<div className='row'>
-					<div className='col-md-6 block'>
+					<div className='col-md-7 block'>
+						<div className='row'>
+						<div className='col-md-6'>
 						<Search 
 							textSearch = {this.state.textSearch}
 							changeTextSearch = {this.changeTextSearch}
 							getAllIngredients = {this.getAllIngredients}
 						/>
+						
 						<ul>
 							{this.state.arrayIngredients.map((name,i)=><li onClick={event => this.addIngredient(event,name)} key={i}><a href="#">{name}</a></li>)}
 						</ul>
-					</div>
-					<div className='col-md-6 block'>
+						</div>
+						<div className='col-md-6'>
 						<SelectedIngredients 
 							ingredientsSelected = {this.state.ingredientsSelected}
 							deleteIngredient = {this.deleteIngredient}
 							searchByIngredient = {this.searchByIngredient}
 						/>
+						</div>
+						</div>
 					</div>	
-				</div>
-				<div className='row'>
+				
+				<div className='col-md-5 block'>
 					<ul>
 					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
 					</ul>
+					<CarouselImg className='hidden'/>
+				</div>
 				</div>
 				<div className='row'>
 					{/*this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined*/}
 					{ this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} /> : undefined}
 				</div>
 			</div>
+			</div>
 		)
 	}
 }
-
-//
-
-
-/* 
-
-
-
-*/
 
 export default ChooseIngredients

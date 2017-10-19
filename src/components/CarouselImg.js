@@ -3,7 +3,7 @@ import cocktailsApi from '../services/cocktailsApi'
 import {Carousel, Image} from 'react-bootstrap'
 import './Home.css'
 
-class Home extends Component {
+class CarouselImg extends Component {
 	constructor (){
 		super();
 
@@ -32,10 +32,18 @@ class Home extends Component {
 	render() {
 		return (
 			<div>
-				
+				<div className='container-fluid'>
+				<h1 className='hidden'>Home</h1>
+				<Carousel className='carousel'>
+				{this.state.cocktailState.map((link, i)=> <Carousel.Item key={i}>
+				    <Image width={200} height={100} alt="900x500" src={link} circle/>
+				    </Carousel.Item>)}
+				</Carousel>
+			</div>
 			</div>
 
 			)
 		}	
 }
-export default Home
+
+export default CarouselImg

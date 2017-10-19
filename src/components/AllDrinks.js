@@ -104,11 +104,12 @@ class AllDrinks extends Component {
 	render() {
 		let lgClose = () => this.setState({ lgShow: false })
 		return (
+			<div className='drinks' >
 			 <Grid>
 			    <Row>
-			    <Col className='container thumb' xs={3} md={3}>
+			    <Col className='container thumb' xs={3} md={4}>
 			      <Thumbnail>
-			      	<Button onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCHOL</Button>&nbsp;
+			      	<Button className='butonOpacity' onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCHOL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
 			         <div>
 			         	<SearchInput AlcArray = {this.state.alcoholState} updateState={this.updateState}/>
@@ -117,7 +118,7 @@ class AllDrinks extends Component {
 			        </Collapse>
 			     	</Thumbnail>
 			    	</Col>
-			    	<Col xs={3} md={3}>
+			    	<Col xs={3} md={4}>
 			      <Thumbnail>
 			        <Button onClick={this.listNonAlcDrinks} bsStyle="primary">NO-ALCHOL</Button>&nbsp;
 					<Collapse in={this.state.toggleState2}>
@@ -128,9 +129,9 @@ class AllDrinks extends Component {
 					</Collapse>
 			      </Thumbnail>
 			    </Col>
-			    <Col xs={3} md={3}>
+			    <Col xs={3} md={4}>
 			      <Thumbnail>
-			        <Button onClick={this.listOptionalDrinks} bsStyle="primary">OPTIONAL</Button>&nbsp;
+			        <Button onClick={this.listOptionalDrinks} bsStyle="primary centered">OPTIONAL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState3}>
 			        <div>
 			         	<SearchInput3 optionalArray = {this.state.optionalState} updateStateB={this.updateState3}/>
@@ -142,6 +143,7 @@ class AllDrinks extends Component {
 			    </Row>
 				<CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} />
 			  </Grid>
+			  </div>
 			)
 		
 	}
