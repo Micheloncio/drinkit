@@ -4,6 +4,7 @@ import './CocktailCard.css'
 import cocktailsApi from '../services/cocktailsApi'
 
 
+
 class CocktailCard extends Component{
 	constructor(props) {
 		super(props);
@@ -53,6 +54,7 @@ class CocktailCard extends Component{
 		this.getCocktail(this.props.cocktailName)
 	}
 
+
 	render(){
 		return(
 				<Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
@@ -60,7 +62,7 @@ class CocktailCard extends Component{
 
 
 	        				<Modal.Header closeButton className="closeBtn">
-	        					<h2>{this.state.cocktailState.cocktailName}</h2>	          					
+	        					<h1>{this.state.cocktailState.cocktailName}</h1>	          					
 	        				</Modal.Header>
 	        		<Row>
 	        			<Modal.Body>  
@@ -84,7 +86,7 @@ class CocktailCard extends Component{
 						</Modal.Body>
 					</Row>
 			        <Modal.Footer>
-			          <Button onClick={this.props.onHide}>Close</Button>
+			          <Button className="buttonClose" onClick={this.addToFav}>Add</Button>
 			        </Modal.Footer>
 			      </Modal>
 

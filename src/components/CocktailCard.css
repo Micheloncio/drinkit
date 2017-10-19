@@ -5,12 +5,21 @@
 .imageCocktail{
 	width: 50%;
 	height: 50%;
+	transition:  0.3s linear 0s;
+}
+.imageCocktail:hover{
+	transform: scale(1.2);
 }
 
-h2{
+h1{
 	text-align: center;
+	color:orange;
+	text-shadow:2px 2px grey; 
+	transition:  0.3s linear 0s;
 }
-
+h1:hover{
+	transform: rotate(4deg);
+}
 li{
 	font-size: 20px;
 }
@@ -18,4 +27,13 @@ li{
 	margin-left: 20px;
 	margin-right: 20px;
 	font-size: 20px;
+}
+
+.buttonClose{
+	background-color: orange;
+	color:white;
+}
+.buttonClose:hover{
+	background-color: darkorange;
+	color:white;
 }
