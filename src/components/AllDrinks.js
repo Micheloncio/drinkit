@@ -111,7 +111,7 @@ class AllDrinks extends Component {
 			        <Collapse in={this.state.toggleState}>
 			         <div>
 			         	<SearchInput AlcArray = {this.state.alcoholState} updateState={this.updateState}/>
-						{this.state.alcoholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
+						{this.state.alcoholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} onClick={()=>this.setState({ lgShow: true })} href="#">{name}</a></ul></div>)}
 			         </div>
 			        </Collapse>
 			     	</Thumbnail>
@@ -122,7 +122,7 @@ class AllDrinks extends Component {
 					<Collapse in={this.state.toggleState2}>
 			        <div>
 			         	<SearchInput2 NoAlcArray = {this.state.nonAlcocholState} updateStateA={this.updateState2}/>
-						{this.state.nonAlcocholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
+						{this.state.nonAlcocholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} onClick={()=>this.setState({ lgShow: true })} href="#">{name}</a></ul></div>)}
 			        </div>
 					</Collapse>
 			      </Thumbnail>

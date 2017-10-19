@@ -7,7 +7,7 @@ import { cloneArray } from '../utils'
 import Search from './choose_ing_components/Search'
 import SelectedIngredients from './choose_ing_components/SelectedIngredients'
 import CocktailCard from './CocktailCard'
-import {Modal, Button} from 'react-bootstrap'
+
 
 
 class ChooseIngredients extends Component {
