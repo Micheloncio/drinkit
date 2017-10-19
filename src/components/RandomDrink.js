@@ -7,7 +7,8 @@ class RandomDrink extends Component {
 		super(props);
 
 		this.state = {
-			cocktailName: ''
+			cocktailName: '',
+			lgShow: false
 		}
 	}
 
@@ -28,6 +29,7 @@ class RandomDrink extends Component {
 	}
 
 	render() {
+		let lgClose = () => this.setState({ lgShow: false })
 		return (<div>
 			{this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined}
 		</div>)

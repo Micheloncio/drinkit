@@ -1,8 +1,11 @@
 .searchBox{
 	display: inline !important;
-	width: 25% !important;
-	margin-left:20px !important;
-	margin-top: 20px !important;
+	width: 50% !important;
+	margin:20px !important;
+	height: 40px !important;
+}
+.block{
+	text-align: center !important;
 }
 
 label{
