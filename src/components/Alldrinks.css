@@ -16,3 +16,13 @@ div.drinks{
 .btn-primary:active {
 	background-color: black;
 }
+.buttonsColor:hover{
+	background-color: #B17A1E;
+}
+
+.centerButtons{
+	text-align: center;
+}
+.leftText{
+	text-align: left;
+}

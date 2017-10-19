@@ -2,7 +2,19 @@
   position:fixed;
   left:0px;
   bottom:0px;
-  height:30px;
+  height:35px;
   width:100%;
   background:#FFFFFF ;
+}
+
+.rowMargin{
+	margin-top: 7px;
+}
+
+a{
+	color:darkorange;
+}
+
+a:hover{
+	color:darkorange;
 }

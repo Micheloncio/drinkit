@@ -51,8 +51,9 @@ class CocktailCard extends Component{
 	}
 
 	componentWillReceiveProps(nextProps) {
-		this.getCocktail(this.props.cocktailName)
+		this.getCocktail(nextProps.cocktailName)
 	}
+
 
 
 	render(){
@@ -85,9 +86,6 @@ class CocktailCard extends Component{
 							</Row>
 						</Modal.Body>
 					</Row>
-			        <Modal.Footer>
-			          <Button className="buttonClose" onClick={this.addToFav}>Add</Button>
-			        </Modal.Footer>
 			      </Modal>
 
 		)

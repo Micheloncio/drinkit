@@ -109,40 +109,40 @@ class AllDrinks extends Component {
 			 <Grid>
 			    <Row>
 			    <Col className='container thumb' xs={3} md={4}>
-			      <Thumbnail>
-			      	<Button className='butonOpacity' onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCOHOLIC DRINKS</Button>&nbsp;
+			      <Thumbnail className="centerButtons">
+			      	<Button className='butonOpacity buttonsColor buttonAlcoholic' onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCOHOLIC DRINKS</Button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
 			         <div>
 			         	<SearchInput AlcArray = {this.state.alcoholState} updateState={this.updateState}/>
-						{this.state.alcoholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)}  href="#">{name}</a></ul></div>)}
+						{this.state.alcoholState.map((name,i) => <div className="leftText"><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)}  href="#">{name}</a></ul></div>)}
 			         </div>
 			        </Collapse>
 			     	</Thumbnail>
 			    	</Col>
 			    	<Col xs={3} md={4}>
-			      <Thumbnail>
-			        <Button onClick={this.listNonAlcDrinks} bsStyle="primary">NON-ALCOHOLIC DRINKS</Button>&nbsp;
+			      <Thumbnail className="centerButtons">
+			        <Button className="buttonsColor" onClick={this.listNonAlcDrinks} bsStyle="primary">NON-ALCOHOLIC DRINKS</Button>&nbsp;
 					<Collapse in={this.state.toggleState2}>
 			        <div>
 			         	<SearchInput2 NoAlcArray = {this.state.nonAlcocholState} updateStateA={this.updateState2}/>
-						{this.state.nonAlcocholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
+						{this.state.nonAlcocholState.map((name,i) => <div className="leftText"><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
 			        </div>
 					</Collapse>
 			      </Thumbnail>
 			    </Col>
 			    <Col xs={3} md={4}>
-			      <Thumbnail>
-			        <Button onClick={this.listOptionalDrinks} bsStyle="primary centered">OPTIONAL ALCOHOL</Button>&nbsp;
+			      <Thumbnail className="centerButtons">
+			        <Button className="buttonsColor" onClick={this.listOptionalDrinks} bsStyle="primary centered">OPTIONAL ALCOHOL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState3}>
 			        <div>
 			         	<SearchInput3 optionalArray = {this.state.optionalState} updateStateB={this.updateState3}/>
-						{this.state.optionalState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
+						{this.state.optionalState.map((name,i) => <div className="leftText"><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
 			        </div>
 					</Collapse>
 			      </Thumbnail>
 			    </Col>
 			    </Row>
-				<CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} />
+				{this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} /> : undefined}
 			  </Grid>
 			  </div>
 			)
