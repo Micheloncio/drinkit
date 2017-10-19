@@ -8,12 +8,12 @@ import RandomDrink from './RandomDrink'
 
 const Main = () => (
 	<div className="Main">
-
-			<Route exact path='/' component= {Home}></Route>
+			<Switch>
+			<Route path='/home' component= {Home}></Route>
 			<Route path='/all_drinks' component= {AllDrinks}></Route>
 			<Route path= '/choose_ingredients' component= {ChooseIngredients}></Route>
 			<Route path= '/random_drink' component= {RandomDrink}></Route>
-
+			</Switch>
 	</div>
 	)
 
