@@ -12,9 +12,11 @@
 }
 
 a{
-	color:darkorange;
+	color:black;
 }
-
+.aColor{
+	color:orange;
+}
 a:hover{
 	color:darkorange;
 }

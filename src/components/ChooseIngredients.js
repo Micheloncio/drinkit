@@ -176,7 +176,7 @@ class ChooseIngredients extends Component {
 							getAllIngredients = {this.getAllIngredients}
 						/>
 						
-						<ul>
+						<ul className="ulStyle">
 							{this.state.arrayIngredients.map((name,i)=><li className='list' onClick={event => this.addIngredient(event,name)} key={i}><a href="#">{name}</a></li>)}
 						</ul>
 						</div>

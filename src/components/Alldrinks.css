@@ -10,14 +10,19 @@ div.drinks{
 
 .btn-primary {
 	background-color: #fd7302;
-	border-color: black;
+	border-color: white;
 }
 
 .btn-primary:active {
 	background-color: black;
 }
+.buttonsColor{
+	color:white;
+	background-color: orange;
+}
 .buttonsColor:hover{
-	background-color: #B17A1E;
+	color:white;
+	background-color: #E0DB41;
 }
 
 .centerButtons{
