@@ -164,11 +164,12 @@ class ChooseIngredients extends Component {
 		let lgClose = () => this.setState({ lgShow: false })
 		return( 
 			<div className="allDrinks">
+				<h2>Choose your favourites ingredients</h2>
 			<div className='container'>
 				<div className='row'>
 					<div className='col-md-7 block'>
 						<div className='row'>
-						<div className='col-md-6'>
+						<div className='col-md-6 bbselected'>
 						<Search 
 							textSearch = {this.state.textSearch}
 							changeTextSearch = {this.changeTextSearch}
@@ -189,15 +190,14 @@ class ChooseIngredients extends Component {
 						</div>
 					</div>	
 				
-				<div className='col-md-5 block'>
+				<div className='col-md-4 col-md-offset-1 block'>
 					<ul>
-					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
+					{this.state.drinksState.length ? this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>) : <CarouselImg />}
 					</ul>
-					<CarouselImg className='hidden'/>
+					
 				</div>
 				</div>
 				<div className='row'>
-					{/*this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined*/}
 					{ this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} /> : undefined}
 				</div>
 			</div>

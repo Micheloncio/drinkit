@@ -36,7 +36,7 @@ class CarouselImg extends Component {
 				<h1 className='hidden'>Home</h1>
 				<Carousel className='carousel'>
 				{this.state.cocktailState.map((link, i)=> <Carousel.Item key={i}>
-				    <Image width={200} height={100} alt="900x500" src={link} circle/>
+				    <Image width={200} height={250} alt="900x500" src={link} circle/>
 				    </Carousel.Item>)}
 				</Carousel>
 			</div>

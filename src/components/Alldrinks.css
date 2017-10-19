@@ -13,6 +13,6 @@ div.drinks{
 	border-color: black;
 }
 
-.btn-primary:hover {
+.btn-primary:active {
 	background-color: black;
 }
