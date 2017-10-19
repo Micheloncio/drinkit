@@ -21,7 +21,8 @@ class ChooseIngredients extends Component {
 			ingredientsSelected: [],
 			drinksState:[],
 			cocktailState: {},
-			cocktailName: ''
+			cocktailName: '',
+			lgShow: false
 		}
 	}
 
@@ -99,7 +100,7 @@ class ChooseIngredients extends Component {
     	if(this.state.ingredientsSelected[1]){
 	    	let arrayCocktails = []
 			for(let i=0;i<promise.length;i++){
-				for(let j=1;j<=15;j++){
+				for(let j=0;j<=15;j++){
 					let ingredient = 'strIngredient' + j
 					if (promise[i][0][ingredient]!=='') {
 						if(promise[i][0][ingredient] == this.state.ingredientsSelected[1].ingredientName){
@@ -157,10 +158,11 @@ class ChooseIngredients extends Component {
 
 
 	render() {
+		let lgClose = () => this.setState({ lgShow: false })
 		return( 
 			<div className='container'>
 				<div className='row'>
-					<div className='col-md-6'>
+					<div className='col-md-6 block'>
 						<Search 
 							textSearch = {this.state.textSearch}
 							changeTextSearch = {this.changeTextSearch}
@@ -170,7 +172,7 @@ class ChooseIngredients extends Component {
 							{this.state.arrayIngredients.map((name,i)=><li onClick={event => this.addIngredient(event,name)} key={i}><a href="#">{name}</a></li>)}
 						</ul>
 					</div>
-					<div className='col-md-6'>
+					<div className='col-md-6 block'>
 						<SelectedIngredients 
 							ingredientsSelected = {this.state.ingredientsSelected}
 							deleteIngredient = {this.deleteIngredient}
@@ -180,33 +182,25 @@ class ChooseIngredients extends Component {
 				</div>
 				<div className='row'>
 					<ul>
-					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)}key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
+					{this.state.drinksState.map((elem) => <li onClick={event => this.takeNameCocktail(event,elem.drinkName)} onClick={()=>this.setState({ lgShow: true })} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}
 					</ul>
 				</div>
 				<div className='row'>
-
-					<Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
-        				<Modal.Header closeButton>
-          					<Modal.Title id="contained-modal-title-lg">Modal heading</Modal.Title>
-        				</Modal.Header>
-        			<Modal.Body>
-			          <h4>Wrapped Text</h4>
-			          <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-			          <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-			          <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-			        </Modal.Body>
-			        <Modal.Footer>
-			          <Button onClick={this.props.onHide}>Close</Button>
-			        </Modal.Footer>
-			      </Modal>
-
-					
+					{/*this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined*/}
+					<CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} />					
 				</div>
 			</div>
 		)
 	}
 }
 
-//{this.state.cocktailName.length ? <CocktailCard cocktailName = {this.state.cocktailName}/> : undefined}
+//
+
+
+/* 
+
+
+
+*/
 
 export default ChooseIngredients

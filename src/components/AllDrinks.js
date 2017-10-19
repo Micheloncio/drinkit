@@ -5,6 +5,7 @@ import './Alldrinks.css'
 import SearchInput from './SearchInput'
 import SearchInput2 from './SearchInput2'
 import SearchInput3 from './SearchInput3'
+import CocktailCard from './CocktailCard'
 
 class AllDrinks extends Component {
 	constructor (){
@@ -15,7 +16,9 @@ class AllDrinks extends Component {
 			optionalState: [],
 			toggleState: false,
 			toggleState2: false,
-			toggleState3: false
+			toggleState3: false,
+			cocktailName: '',
+			lgShow: false
 		}
 	}
 
@@ -90,18 +93,25 @@ class AllDrinks extends Component {
 	updateState3 = (newState3) => {
 		this.setState({optionalState : newState3})
 	}
+	takeNameCocktail=(e,name)=>{
+		e.preventDefault()
 
+		this.setState({
+			cocktailName:name
+		})
+	}
 	render() {
+		let lgClose = () => this.setState({ lgShow: false })
 		return (
 			 <Grid>
 			    <Row>
-			    <Col xs={6} md={4}>
+			    <Col className='container thumb' xs={6} md={4}>
 			      <Thumbnail>
 			      	<Button onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCHOL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
 			         <div>
 			         	<SearchInput AlcArray = {this.state.alcoholState} updateState={this.updateState}/>
-						{this.state.alcoholState.map((name,i) => <div><ul key={i}>{name}</ul></div>)}
+						{this.state.alcoholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
 			         </div>
 			        </Collapse>
 			     	</Thumbnail>
@@ -112,7 +122,7 @@ class AllDrinks extends Component {
 					<Collapse in={this.state.toggleState2}>
 			        <div>
 			         	<SearchInput2 NoAlcArray = {this.state.nonAlcocholState} updateStateA={this.updateState2}/>
-						{this.state.nonAlcocholState.map((name,i) => <div><ul key={i}>{name}</ul></div>)}
+						{this.state.nonAlcocholState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} href="#">{name}</a></ul></div>)}
 			        </div>
 					</Collapse>
 			      </Thumbnail>
@@ -123,12 +133,13 @@ class AllDrinks extends Component {
 			        <Collapse in={this.state.toggleState3}>
 			        <div>
 			         	<SearchInput3 optionalArray = {this.state.optionalState} updateStateB={this.updateState3}/>
-						{this.state.optionalState.map((name,i) => <div><ul key={i}>{name}</ul></div>)}
+						{this.state.optionalState.map((name,i) => <div><ul key={i}><a onClick={event=> this.takeNameCocktail(event,name)} onClick={()=>this.setState({ lgShow: true })} href="#">{name}</a></ul></div>)}
 			        </div>
 					</Collapse>
 			      </Thumbnail>
 			    </Col>
 			    </Row>
+				<CocktailCard cocktailName = {this.state.cocktailName} show={this.state.lgShow} onHide={lgClose} />
 			  </Grid>
 			)
 		

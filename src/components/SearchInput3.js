@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import {Glyphicon,Col} from 'react-bootstrap'
 
 
 class SearchInput3 extends Component {
@@ -25,8 +26,12 @@ handleSubmit = (e) => {
 	render(){
 		return(
 		<form onSubmit={this.handleSubmit}>
-			<input value={this.state.value} onChange={this.handleChange} className="form-control"/>
-			<button type="submit" className="btn btn-default">Find</button>
+		<div>
+			<div className='row'>
+			<input value={this.state.value} onChange={this.handleChange} className="form-control searchbox"/>
+			<button type="submit" className="btn btn-default"><Glyphicon className='searchbutton' glyph="search" /></button>
+			</div>
+		</div>
 		</form>
 
  		)

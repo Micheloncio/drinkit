@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
-import {Grid, Row, Thumbnail, Col, Image} from 'react-bootstrap'
-
+import {Grid, Row, Thumbnail, Col, Image, Modal, Button } from 'react-bootstrap'
+import './CocktailCard.css'
 import cocktailsApi from '../services/cocktailsApi'
 
 
@@ -55,16 +55,16 @@ class CocktailCard extends Component{
 
 	render(){
 		return(
-				<Grid className="align-content">
+				/*<Grid className="align-content">
 				    <Row>
-				    <Col xs={12} md={4} ms={4}>
+				    <Col xs={12} md={5} ms={5}>
 				      <Thumbnail> 
 				       	<Image src={this.state.cocktailState.cocktailImg} rounded responsive /> 
 				        <h2>{this.state.cocktailState.cocktailName}</h2>
 				        <Row>
 				       		<Col xs={12} md={6}>
 						        <ul>
-						         	<h4>Ingredients:</h4>
+						         	<h3>Ingredients:</h3>
 		                            {this.state.cocktailState.cocktailIngredients ? this.state.cocktailState.cocktailIngredients.map((ingredient) => <li>{ingredient}</li>) : undefined}
 		                        </ul>
 		                    </Col>
@@ -76,7 +76,30 @@ class CocktailCard extends Component{
 				      </Thumbnail>
 				    </Col>
 				  	</Row>
-				</Grid>
+				</Grid>*/
+				<Modal {...this.props} bsSize="large" aria-labelledby="contained-modal-title-lg">
+        				<Modal.Header closeButton>
+          					<Image src={this.state.cocktailState.cocktailImg} rounded responsive />
+        				</Modal.Header>
+        			<Modal.Body>
+			          <h4>{this.state.cocktailState.cocktailName}</h4>
+			          <Row>
+				       		<Col xs={12} md={6}>
+						        <ul>
+						         	<h3>Ingredients:</h3>
+		                            {this.state.cocktailState.cocktailIngredients ? this.state.cocktailState.cocktailIngredients.map((ingredient) => <li>{ingredient}</li>) : undefined}
+		                        </ul>
+		                    </Col>
+							<Col xs={12} md={6}>
+		                        <h3>Instructions:</h3>
+								<p>{this.state.cocktailState.cocktailInstructions}</p>
+							</Col>
+						</Row>
+			        </Modal.Body>
+			        <Modal.Footer>
+			          <Button onClick={this.props.onHide}>Close</Button>
+			        </Modal.Footer>
+			      </Modal>
 
 		)
 	}

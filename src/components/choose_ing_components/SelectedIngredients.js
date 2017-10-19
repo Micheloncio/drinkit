@@ -12,7 +12,7 @@ class SelectedIngredients extends Component{
 						</li> )
 					}
 				</ul>
-				<button onClick={this.props.searchByIngredient}>Search</button>
+				{this.props.ingredientsSelected.length ? <button className="btn btn-success" onClick={this.props.searchByIngredient}>Search</button> : undefined}
 				</div>
 		)
 	}
