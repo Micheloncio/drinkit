@@ -1,6 +1,6 @@
-.headerfix{
+	.headerfix { 
+	margin-bottom: 0;
   position:sticky;
-  z-index: 2;
   left:0px;
   top:0px;
   height:30px;

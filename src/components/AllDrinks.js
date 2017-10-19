@@ -106,7 +106,7 @@ class AllDrinks extends Component {
 		return (
 			 <Grid>
 			    <Row>
-			    <Col className='container thumb' xs={6} md={4}>
+			    <Col className='container thumb' xs={3} md={3}>
 			      <Thumbnail>
 			      	<Button onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCHOL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
@@ -117,7 +117,7 @@ class AllDrinks extends Component {
 			        </Collapse>
 			     	</Thumbnail>
 			    	</Col>
-			    	<Col xs={6} md={4}>
+			    	<Col xs={3} md={3}>
 			      <Thumbnail>
 			        <Button onClick={this.listNonAlcDrinks} bsStyle="primary">NO-ALCHOL</Button>&nbsp;
 					<Collapse in={this.state.toggleState2}>
@@ -128,7 +128,7 @@ class AllDrinks extends Component {
 					</Collapse>
 			      </Thumbnail>
 			    </Col>
-			    <Col xs={6} md={4}>
+			    <Col xs={3} md={3}>
 			      <Thumbnail>
 			        <Button onClick={this.listOptionalDrinks} bsStyle="primary">OPTIONAL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState3}>

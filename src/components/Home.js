@@ -31,13 +31,8 @@ class Home extends Component {
 	
 	render() {
 		return (
-			<div className='container-fluid'>
-				<h1 className='hidden'>Home</h1>
-				<Carousel className='carousel'>
-				{this.state.cocktailState.map((link, i)=> <Carousel.Item key={i}>
-				      <Image width={450} height={250} alt="900x500" src={link} circle/>
-				    </Carousel.Item>)}
-				</Carousel>
+			<div>
+
 			</div>
 			)
 	}
