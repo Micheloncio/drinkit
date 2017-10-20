@@ -1,3 +1,31 @@
 div.jumbotron{
 	margin-top: 100px !important;
+	background-color: rgba(255,255,255, 0);
+}
+h1.home{
+	color:black;
+	text-shadow: 2px 2px rgb(255,255,255);
+	font-size: 150px !important; 
+	font-family: 'Amatic SC', cursive;	
+	margin-right: 100px;
+	color: black !important;
+	text-align:center;
+	padding-left:100px;
+	padding-bottom: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+
+h3{
+	color:#343434 !important;
+	text-align:center;
+	font-size: 20px;
+	margin:0;
+	padding: 0;
+	color:black !important;
+}
+
+p{
+	color:#343434;
+
 }
