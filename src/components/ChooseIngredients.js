@@ -102,10 +102,10 @@ class ChooseIngredients extends Component {
     	if(this.state.ingredientsSelected[1]){
 	    	let arrayCocktails = []
 			for(let i=0;i<promise.length;i++){
-				for(let j=0;j<=15;j++){
+				for(let j=1;j<15;j++){
 					let ingredient = 'strIngredient' + j
-					if (promise[i][0][ingredient]!=='') {
-						if(promise[i][0][ingredient] == this.state.ingredientsSelected[1].ingredientName){
+					if (promise[i][0][ingredient]!=='' && promise[i][0][ingredient]!==null) {
+						if(promise[i][0][ingredient].toLowerCase() == this.state.ingredientsSelected[1].ingredientName.toLowerCase()){
 							arrayCocktails.push({
 								drinkId:promise[i][0].idDrink,
 								drinkName:promise[i][0].strDrink
