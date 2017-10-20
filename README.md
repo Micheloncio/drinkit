@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 [![HTML5](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/html-5.svg]
 [![CSS3](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/css-3.svg)]
 [![Bootstrap](http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png)]
+=======
+[![HTML5](http://www.w3.org/TR/html5/)]
+[![Bootstrap](http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png](http://getbootstrap.com/)]
+>>>>>>> 08acbd977f6d2c79d4caa7edf78e2dca0e9544ab
+>>>>>>> 50e3623dafa4dedd6e526efbc043976e3e727ddb
 [![REACT](https://cdn-images-1.medium.com/max/512/1*qUlxDdY3T-rDtJ4LhLGkEg.png)]
 # DRINKIT
 
