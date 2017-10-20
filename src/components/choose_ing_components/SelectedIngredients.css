@@ -1,0 +1,16 @@
+.searchButton2{
+	margin-left: 250px;
+	background-color: orange;
+	display: inline-block;
+	height: 35px;
+}
+.searchButton2:hover{
+	color:white;
+}
+
+.ulSectedIngredients{
+	margin-top: 20px;
+}
+.divSectedIngredients{
+	margin-top: 39px;
+}

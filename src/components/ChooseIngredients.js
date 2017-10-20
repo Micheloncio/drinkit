@@ -165,7 +165,7 @@ class ChooseIngredients extends Component {
 		return( 
 			<div className="allDrinks">
 				<h2>Choose your favourites ingredients</h2>
-			<div className='container'>
+			<div className="divSearchIngredients">
 				<div className='row'>
 					<div className=' col-xs-12 col-md-7'>
 						<div className='row'>
@@ -190,9 +190,9 @@ class ChooseIngredients extends Component {
 						</div>
 					</div>	
 				
-				<div className='col-xs-12 col-md-4 col-md-offset-1'>
-					<ul>
-					{this.state.drinksState.length ? <div><h3>We find these combinations for you!</h3>{this.state.drinksState.map((elem) => <div><li className='listC' onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li></div>)}</div> : <CarouselImg />}
+				<div className='col-xs-12 col-md-5'>
+					<ul className='ulResults'>
+					{this.state.drinksState.length ? <div><h5>RESULTS:</h5><div className="divResults">{this.state.drinksState.map((elem) =><li onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li>)}</div></div> : <CarouselImg />}
 					</ul>
 					
 				</div>
