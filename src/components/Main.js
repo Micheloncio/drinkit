@@ -9,7 +9,7 @@ import RandomDrink from './RandomDrink'
 const Main = () => (
 	<div className="Main">
 			<Switch>
-			<Route path='/home' component= {Home}></Route>
+			<Route exact path='/' component= {Home}></Route>
 			<Route path='/all_drinks' component= {AllDrinks}></Route>
 			<Route path= '/choose_ingredients' component= {ChooseIngredients}></Route>
 			<Route path= '/random_drink' component= {RandomDrink}></Route>
