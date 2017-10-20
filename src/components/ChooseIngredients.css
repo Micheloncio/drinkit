@@ -9,7 +9,7 @@ h2 {
 }
 .searchBox{
 	display: inline !important;
-	height: 40px !important;
+	height: 35px !important;
 }
 .block{
 	text-align: left !important;
@@ -38,4 +38,6 @@ h3{
 span{
 	color:red;
 }
-
+.ulStyle{
+	margin-top: 10px;
+}

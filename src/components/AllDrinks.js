@@ -110,7 +110,7 @@ class AllDrinks extends Component {
 			    <Row>
 			    <Col className='container thumb' xs={12} md={4}>
 			      <Thumbnail className="centerButtons">
-			      	<Button className='butonOpacity buttonsColor buttonAlcoholic' onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCOHOLIC DRINKS</Button>&nbsp;
+			      	<button className='btn butonOpacity buttonsColor buttonAlcoholic' onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCOHOLIC DRINKS</button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
 			         <div>
 			         	<SearchInput AlcArray = {this.state.alcoholState} updateState={this.updateState}/>
@@ -121,7 +121,7 @@ class AllDrinks extends Component {
 			    	</Col>
 			    	<Col xs={12} md={4}>
 			      <Thumbnail className="centerButtons">
-			        <Button className="buttonsColor" onClick={this.listNonAlcDrinks} bsStyle="primary">NON-ALCOHOLIC DRINKS</Button>&nbsp;
+			        <button className="btn buttonsColor" onClick={this.listNonAlcDrinks} bsStyle="primary">NON-ALCOHOLIC DRINKS</button>&nbsp;
 					<Collapse in={this.state.toggleState2}>
 			        <div>
 			         	<SearchInput2 NoAlcArray = {this.state.nonAlcocholState} updateStateA={this.updateState2}/>
@@ -132,7 +132,7 @@ class AllDrinks extends Component {
 			    </Col>
 			    <Col xs={12} md={4}>
 			      <Thumbnail className="centerButtons">
-			        <Button className="buttonsColor" onClick={this.listOptionalDrinks} bsStyle="primary centered">OPTIONAL ALCOHOL</Button>&nbsp;
+			        <button className="btn buttonsColor" onClick={this.listOptionalDrinks} bsStyle="primary centered">OPTIONAL ALCOHOL</button>&nbsp;
 			        <Collapse in={this.state.toggleState3}>
 			        <div>
 			         	<SearchInput3 optionalArray = {this.state.optionalState} updateStateB={this.updateState3}/>

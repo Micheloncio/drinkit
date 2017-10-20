@@ -1,14 +1,19 @@
 .searchButton{
-	background-color: #fd7302;
+	background-color: orange;
 	display: inline-block;
 	height: 35px;
 	margin-left: 4px;
+	color:white;
+	padding-top: 6px;
 }
 .searchButton2{
 	margin-left: 250px;
-	background-color: #fd7302;
+	background-color: orange;
 	display: inline-block;
 	height: 35px;
+}
+.searchButton2:hover{
+	color:white;
 }
 form{
 	border-right: 2px grey solid;

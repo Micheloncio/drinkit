@@ -13,7 +13,7 @@ class SelectedIngredients extends Component{
 						</li> )
 					}
 				</ul>
-				{this.props.ingredientsSelected.length ? <button className="btn btn-primary searchButton2" onClick={this.props.searchByIngredient}><Glyphicon className='searchbutton' glyph="search" /></button> : undefined}
+				{this.props.ingredientsSelected.length ? <button className="btn searchButton2" onClick={this.props.searchByIngredient}><Glyphicon className='searchbutton' glyph="search" /></button> : undefined}
 				</div>
 		)
 	}
