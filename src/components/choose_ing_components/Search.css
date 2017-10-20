@@ -1,23 +1,16 @@
 .searchButton{
 	background-color: orange;
 	display: inline-block;
-	height: 35px;
+	height: 30px;
 	margin-left: 4px;
 	color:white;
-	padding-top: 6px;
+	padding-top: 4px;
 }
-.searchButton2{
-	margin-left: 250px;
-	background-color: orange;
-	display: inline-block;
-	height: 35px;
-}
-.searchButton2:hover{
+.searchButton:hover{
 	color:white;
+	background-color: #E0DB41;
 }
 form{
-	border-right: 2px grey solid;
-	padding-right: 10px;
 	display:inline-block;
 }
 
@@ -29,4 +22,6 @@ h4 {
 	font-size: 15px;
 	color: #636469;
 }
-
+.searchBoxChoose{
+	width: 220px
+}

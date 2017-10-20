@@ -6,9 +6,9 @@ class Search extends Component{
 		return (
 			<div>
 			<form>
-				<h4>INGREDIENTS</h4>
-				<input className="searchBox" onChange={this.props.changeTextSearch} type="text" placeholder="Write an ingredient..."></input>
+				<input className="searchBoxChoose" onChange={this.props.changeTextSearch} type="text" placeholder="Write an ingredient..."></input>
 				<button className="btn searchButton" onClick={event => {this.props.getAllIngredients(event, this.props.textSearch)}}>Find</button>
+				<h5>INGREDIENTS:</h5>
 			</form>
 			</div>
 		)
