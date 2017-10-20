@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
-import cocktailsApi from '../services/cocktailsApi'
+import cocktailsApi from '../../services/cocktailsApi'
 import {Carousel, Image} from 'react-bootstrap'
-import './Home.css'
-import CocktailCard from './CocktailCard'
+import './CarouselImg.css'
+import CocktailCard from '../CocktailCard'
 
 class CarouselImg extends Component {
 	constructor (){
@@ -28,12 +28,10 @@ class CarouselImg extends Component {
 			this.setState({
 				cocktailState: response.map(obj => {return{img: obj.strDrinkThumb,name:obj.strDrink}})
 			})
-			console.log(this.state) 
 		})		
 	}
 	takeNameCocktail = (e, name) => {
 		e.preventDefault()
-		console.log('el nombre es' + name)
 		this.setState({
 			cocktailName: name,
 			lgShow: true

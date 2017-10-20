@@ -6,7 +6,7 @@ const Footer= ()=>(
           <div className="container">
             <div className="row rowMargin">
               <div className="col-md-5 col-md-offset-1">
-                   © 2017 Copyright  <a className="aColor" href="http://www.alcoholicos-anonimos.org/v_portal/apartados/apartado.asp" target="_blank"> Alcholicos Anonimos </a>
+                   © 2017 Copyright  <a className="aColor" href="http://www.alcoholicos-anonimos.org/v_portal/apartados/apartado.asp" target="_blank"> Alcohólicos Anónimos </a>
               </div>
               <div className="col-md-4 col-md-offset-2">
                    Created by  <a className="aColor" href="https://github.com/GemmaGarcias" target="_blank"> Gemma, </a>

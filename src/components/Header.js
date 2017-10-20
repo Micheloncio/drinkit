@@ -2,7 +2,8 @@ import React from 'react'
 
 import {Navbar, Nav, NavItem, Image } from 'react-bootstrap';
 import {LinkContainer} from 'react-router-bootstrap'
-import './Home.css'
+import {Link} from 'react-router-dom'
+
 import './Header.css'
 
 
@@ -14,7 +15,7 @@ const Header= () => (
       	<Navbar.Brand>
         <div>
         <img src='./logo.jpg'/>
-        	<a href="/"><strong>Drink It</strong></a>
+        	<Link to="/home"><strong>Drink It</strong></Link>
           </div>
       	 </Navbar.Brand>
           <Navbar.Toggle />
