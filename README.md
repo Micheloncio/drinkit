@@ -12,7 +12,7 @@ Repository for the front-end project at ["Skylab coders Academy"](http://www.sky
 ["DrinkIt"](http://drinkit.surge.sh/) use the ["thecocktaildb"](http://www.thecocktaildb.com/api.php) API  to search all kinds of cocktails and ingredients to create your drink combinations.
 
 
-###Dependencies
+### Dependencies
 
 The following dependencies where use to make the Web application
 
@@ -24,16 +24,16 @@ The following dependencies where use to make the Web application
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14"
 
-###Authors:
+### Authors:
 
 - Gemma Garcias
 - Miguel Escolano
 - Víctor Martínez
 
-###Acknowledgments
+### Acknowledgments
 
 - Alejandro Delgado
-- Joan Albert Segur
+- Joan Albert Segura
 - Manuel Barzi
 - Juanma Garrido
 
