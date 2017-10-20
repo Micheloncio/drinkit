@@ -167,9 +167,9 @@ class ChooseIngredients extends Component {
 				<h2>Choose your favourites ingredients</h2>
 			<div className='container'>
 				<div className='row'>
-					<div className='col-md-7 block'>
+					<div className=' col-xs-12 col-md-7'>
 						<div className='row'>
-						<div className='col-md-6 bbselected'>
+						<div className='col-xs-12 col-md-6 bbselected'>
 						<Search 
 							textSearch = {this.state.textSearch}
 							changeTextSearch = {this.changeTextSearch}
@@ -180,7 +180,7 @@ class ChooseIngredients extends Component {
 							{this.state.arrayIngredients.map((name,i)=><li className='list' onClick={event => this.addIngredient(event,name)} key={i}><a href="#">{name}</a></li>)}
 						</ul>
 						</div>
-						<div className='col-md-6'>
+						<div className='col-xs-12 col-md-6'>
 						<SelectedIngredients 
 							ingredientsSelected = {this.state.ingredientsSelected}
 							deleteIngredient = {this.deleteIngredient}
@@ -190,7 +190,7 @@ class ChooseIngredients extends Component {
 						</div>
 					</div>	
 				
-				<div className='col-md-4 col-md-offset-1 block'>
+				<div className='col-xs-12 col-md-4 col-md-offset-1'>
 					<ul>
 					{this.state.drinksState.length ? <div><h3>We find these combinations for you!</h3>{this.state.drinksState.map((elem) => <div><li className='listC' onClick={event => this.takeNameCocktail(event,elem.drinkName)} key={elem.drinkId}><a href="#">{elem.drinkName}</a></li></div>)}</div> : <CarouselImg />}
 					</ul>

@@ -14,7 +14,7 @@ const Header= () => (
       	<Navbar.Brand>
         <div>
         <img src='./logo.jpg'/>
-        	<a href="/home"><strong>Drink It</strong></a>
+        	<a href="/"><strong>Drink It</strong></a>
           </div>
       	 </Navbar.Brand>
           <Navbar.Toggle />

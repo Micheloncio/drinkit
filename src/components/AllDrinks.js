@@ -108,7 +108,7 @@ class AllDrinks extends Component {
 			<h2>Which kind of cocktail do you want...</h2>
 			 <Grid>
 			    <Row>
-			    <Col className='container thumb' xs={3} md={4}>
+			    <Col className='container thumb' xs={12} md={4}>
 			      <Thumbnail className="centerButtons">
 			      	<Button className='butonOpacity buttonsColor buttonAlcoholic' onClick={this.listAlcDrinks} bsStyle="primary" width={442} height={400}>ALCOHOLIC DRINKS</Button>&nbsp;
 			        <Collapse in={this.state.toggleState}>
@@ -119,7 +119,7 @@ class AllDrinks extends Component {
 			        </Collapse>
 			     	</Thumbnail>
 			    	</Col>
-			    	<Col xs={3} md={4}>
+			    	<Col xs={12} md={4}>
 			      <Thumbnail className="centerButtons">
 			        <Button className="buttonsColor" onClick={this.listNonAlcDrinks} bsStyle="primary">NON-ALCOHOLIC DRINKS</Button>&nbsp;
 					<Collapse in={this.state.toggleState2}>
@@ -130,7 +130,7 @@ class AllDrinks extends Component {
 					</Collapse>
 			      </Thumbnail>
 			    </Col>
-			    <Col xs={3} md={4}>
+			    <Col xs={12} md={4}>
 			      <Thumbnail className="centerButtons">
 			        <Button className="buttonsColor" onClick={this.listOptionalDrinks} bsStyle="primary centered">OPTIONAL ALCOHOL</Button>&nbsp;
 			        <Collapse in={this.state.toggleState3}>
