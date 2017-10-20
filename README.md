@@ -1,5 +1,6 @@
-[![HTML5 and CSS3](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/html-5.svg)https://s3-us-west-2.amazonaws.com/svgporn.com/logos/css-3.svg](https://svgporn.com/)[![Bootstrap](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/bootstrap.svg](http://getbootstrap.com/)[![Standard - JavaScript Style Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)](http://standardjs.com/)
-
+[![HTML5,CSS3 and JS](https://img.itch.io/aW1hZ2UyL2phbS8yNjgxLzMyOTQxOS5wbmc=/original/4Pm03N.png](https://underc0de.org)
+[![Bootstrap](http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png](http://getbootstrap.com/)
+[![REACT](https://cdn-images-1.medium.com/max/512/1*qUlxDdY3T-rDtJ4LhLGkEg.png)]
 # DRINKIT
 
 The definitive cocktails and drinks finder.
