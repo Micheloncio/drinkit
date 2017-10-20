@@ -1,4 +1,6 @@
-[![HTML5 and CSS3](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/html-5.svg)https://s3-us-west-2.amazonaws.com/svgporn.com/logos/css-3.svg](https://svgporn.com/)[![Bootstrap](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/bootstrap.svg](http://getbootstrap.com/)[![Standard - JavaScript Style Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)](http://standardjs.com/)
+[![HTML5](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/html-5.svg)
+[![CSS3](ttps://s3-us-west-2.amazonaws.com/svgporn.com/logos/css-3.svg)
+https://svgporn.com/)[![Bootstrap](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/bootstrap.svg](http://getbootstrap.com/)[![Standard - JavaScript Style Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript)](http://standardjs.com/)
 
 # DRINKIT
 
