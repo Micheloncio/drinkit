@@ -5,7 +5,7 @@ class SelectedIngredients extends Component{
 	render(){
 		return (
 			<div>
-				<h5>INGREDIENTS SELECTED:</h5>
+				<h4>SELECTED</h4>
 				<ul>
 					{
 						this.props.ingredientsSelected.map( elem => <li key={elem.ingredientId}>{elem.ingredientName} 

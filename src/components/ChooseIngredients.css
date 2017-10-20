@@ -41,3 +41,7 @@ span{
 .ulStyle{
 	margin-top: 10px;
 }
+#root > div > div > div {
+
+	padding: none;
+}

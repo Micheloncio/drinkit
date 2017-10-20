@@ -5,7 +5,7 @@ div.caption{
 div.drinks{
 	margin-top: 100px !important;
 	background-color: rgba(255,255,255, 0.75);
-	padding:20px;
+	padding:5px;
 }
 
 .btn-primary {
@@ -30,4 +30,24 @@ div.drinks{
 }
 .leftText{
 	text-align: left;
+
+}
+
+#root > div > div > div > div > div:nth-child(1) > div.col-md-7.block > div > div.col-md-6.bbselected > form {
+
+	align-content: left;
+	padding: none;
+}
+
+
+#root > div > div > div {
+
+	padding: none;
+}
+
+#root > div > div > div > h2 {
+	margin-bottom: 35px;
+	margin-top: 8px;
+	
+
 }
