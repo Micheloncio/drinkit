@@ -15,6 +15,10 @@ div > img{
 	background-image:none;
 }
 
+.carouselImage{
+	cursor:pointer;
+}
+
 #root > div > div > div > div > a.carousel-control.right{
 	background-image: none !important;
 }

@@ -7,6 +7,10 @@ div.allDrinks{
 h2 {
 	margin-bottom: 30px;
 }
+.divSearchIngredients{
+	margin-left: 25px;
+
+}
 .searchBox{
 	display: inline !important;
 	height: 35px !important;
@@ -41,7 +45,10 @@ span{
 .ulStyle{
 	margin-top: 10px;
 }
-#root > div > div > div {
+.ulResults{
+	margin-top: 39px;
+}
 
-	padding: none;
+.divResults{
+	margin-top: 25px;	
 }
