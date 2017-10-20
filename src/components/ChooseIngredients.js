@@ -1,13 +1,14 @@
 import React, {Component} from 'react'
 import cocktailsApi from '../services/cocktailsApi'
 import Home from './Home'
-import CarouselImg from './CarouselImg'
+
 
 import './ChooseIngredients.css'
 
 import { cloneArray } from '../utils'
 import Search from './choose_ing_components/Search'
 import SelectedIngredients from './choose_ing_components/SelectedIngredients'
+import CarouselImg from './choose_ing_components/CarouselImg'
 import CocktailCard from './CocktailCard'
 
 
@@ -152,7 +153,6 @@ class ChooseIngredients extends Component {
 
 	takeNameCocktail = (e, name) => {
 		e.preventDefault()
-		console.log('el nombre es' + name)
 		this.setState({
 			cocktailName: name,
 			lgShow: true

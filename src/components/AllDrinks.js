@@ -2,9 +2,9 @@ import React, {Component} from 'react'
 import {Grid, Row, Col, Thumbnail, Button, Collapse} from 'react-bootstrap'
 import cocktailsApi from '../services/cocktailsApi'
 import './Alldrinks.css'
-import SearchInput from './SearchInput'
-import SearchInput2 from './SearchInput2'
-import SearchInput3 from './SearchInput3'
+import SearchInput from './all_drinks_components/SearchInput'
+import SearchInput2 from './all_drinks_components/SearchInput2'
+import SearchInput3 from './all_drinks_components/SearchInput3'
 import CocktailCard from './CocktailCard'
 
 class AllDrinks extends Component {
@@ -28,7 +28,7 @@ class AllDrinks extends Component {
 				this.setState({
 				alcoholState: res.map(obj => obj.strDrink)
 			})
-			console.log(this.state)			
+		
 		})
 		if(this.state.toggleState === false){
 			this.setState({
@@ -48,8 +48,7 @@ class AllDrinks extends Component {
         .then(res => {
                 this.setState({
                 nonAlcocholState: res.map(obj => obj.strDrink)
-            })
-            console.log(this.state)            
+            })         
         })
         		if(this.state.toggleState2 === false){
 			this.setState({
@@ -68,8 +67,7 @@ class AllDrinks extends Component {
         .then(res => {
                 this.setState({
                 optionalState: res.map(obj => obj.strDrink)
-            })
-            console.log(this.state)            
+            })          
         })
         		if(this.state.toggleState3 === false){
 			this.setState({

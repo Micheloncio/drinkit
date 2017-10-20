@@ -17,7 +17,6 @@ class CocktailCard extends Component{
 	getCocktail = (name) =>{
 		cocktailsApi.searchDrinksByName(name)
 		.then(res =>{
-			console.log(res)
 			let ingredients = []
 			for(let i=1; i<=15;i++){
 				let ingredient = 'strIngredient' + i

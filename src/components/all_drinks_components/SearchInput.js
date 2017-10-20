@@ -29,7 +29,7 @@ handleSubmit = (e) => {
 			<form onSubmit={this.handleSubmit}>
 				<div>
 					<div className='row'>
-					<input value={this.state.value} onChange={this.handleChange} className="form-control searchbox"/>
+					<input value={this.state.value} onChange={this.handleChange} className="form-control searchbox" placeholder="Find a drink"/>
 					<button type="submit" className="btn btn-default"><Glyphicon className='searchbutton' glyph="search" /></button>
 					</div>
 				</div>
