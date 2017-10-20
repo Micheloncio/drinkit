@@ -14,7 +14,6 @@
 h1{
 	text-align: center;
 	color:orange;
-	text-shadow:2px 2px grey; 
 	transition:  0.3s linear 0s;
 }
 h1:hover{
