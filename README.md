@@ -17,6 +17,14 @@ The definitive cocktails and drinks finder.
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+###Dependencies
+
+The following dependencies where use to make the Web application
+
+Bootstrap
+
+React Bootstrap
+
 ### Prerequisites
 
 What things you need to install the software and how to install them
