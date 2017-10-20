@@ -18,7 +18,7 @@ class Home extends Component {
 			<div className="container">
 			  <div className="jumbotron">
 			    <h1 className='home'>DRINK IT</h1>
-			    <h3>The definitive cocktails and drinks finder</h3>     
+			    <h3 className="homeh3">The definitive cocktails and drinks finder</h3>     
 			    <p></p>
 			  </div>    
 			</div>
