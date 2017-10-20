@@ -1,13 +1,9 @@
-<<<<<<< HEAD
-[![HTML5](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/html-5.svg]
-[![CSS3](https://s3-us-west-2.amazonaws.com/svgporn.com/logos/css-3.svg)]
-[![Bootstrap](http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png)]
-=======
-[![HTML5](http://www.w3.org/TR/html5/)]
-[![Bootstrap](http://marketplace.intelledox.com/wp-content/uploads/edd/2017/01/Bootstrap.png](http://getbootstrap.com/)]
->>>>>>> 08acbd977f6d2c79d4caa7edf78e2dca0e9544ab
->>>>>>> 50e3623dafa4dedd6e526efbc043976e3e727ddb
-[![REACT](https://cdn-images-1.medium.com/max/512/1*qUlxDdY3T-rDtJ4LhLGkEg.png)]
+[![HTML5,CSS3 and JS](https://github.com/FransLopez/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/)  
+[![ES6](https://github.com/MarioTerron/logo-images/blob/master/logos/es6.png)](http://www.ecma-international.org/ecma-262/6.0/) 
+[![Bootstrap](https://github.com/FransLopez/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)  
+[![npm](https://github.com/MarioTerron/logo-images/blob/master/logos/npm.png)](https://www.npmjs.com/)
+[![React](https://github.com/FransLopez/logo-images/blob/master/logos/react.png)](https://facebook.github.io/react/)
+
 # DRINKIT
 
 The definitive cocktails and drinks finder.
