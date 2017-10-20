@@ -10,7 +10,7 @@ The definitive cocktails and drinks finder.
 
 Repository for the front-end project at ["Skylab coders Academy"](http://www.skylabcoders.com/es) Full Stack Web Development bootcamp.
 
-DrinkIt use the ["thecocktaildb"](http://www.thecocktaildb.com/api.php) API  to search all kinds of cocktails and ingredients to create your drink combinations.
+["DrinkIt"](http://drinkit.surge.sh/) use the ["thecocktaildb"](http://www.thecocktaildb.com/api.php) API  to search all kinds of cocktails and ingredients to create your drink combinations.
 
 
 ###Dependencies
