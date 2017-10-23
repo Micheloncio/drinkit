@@ -24,16 +24,16 @@ The following dependencies where use to make the Web application
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14"
 
-### Authors:
+#### Authors:
 
 - Gemma Garcias
 - Miguel Escolano
 - Víctor Martínez
 
-### Acknowledgments
+#### Acknowledgments
 
 - Alejandro Delgado
-- Joan Albert Segura
+- Joan Albert Seguro
 - Manuel Barzi
 - Juanma Garrido
 
